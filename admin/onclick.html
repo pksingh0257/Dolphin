@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+     
+   		<h2>Change image onClick event here...</h2>
+		<img src="img/mars.jpg" onmouseover="imagefun()" id="getImage">
+  
+    <script>
+        function imagefun() {
+            var Image_Id = document.getElementById('getImage');
+            if (Image_Id.src.match("img/mars.jpg")) {
+                Image_Id.src = "img/solar.jpg";
+            }
+            else {
+                Image_Id.src = "img/mars.jpg";
+            }
+        }        
+    </script>
+
+</body>
+</html>
